@@ -1,30 +1,21 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
-<main class="w-full h-[100svh] bg-red-200">
+<main>
 
   <div class="vstackfull gap-[2vh] p-[1vh]">
     <!-- <app-chorizontal> -->
     <div class="centerfull">
-      <h1 class="text-slate-700">Custom Components In Angular</h1>
+      <h1>Custom Classes In Angular</h1>
     </div>
     <!-- </app-chorizontal> -->
-    <app-titled-vstack title="FlexFull: ffull (with three child elements)">
+    <div class="example-outer-container vstackfull gap-[1vh]">
+      <h2 class="text-white">example container classes</h2>
       <div class="flexfull example-parent-container">
         <div class="vstackfit gap-[2vh]">
-          <div class=" bg-blue-100 border rounded-xl p-[1vh] shadow-xl">Item 1</div>
-          <div class="bg-blue-200 border rounded-xl p-[1vh] shadow-xl">Item 2</div>
-          <div class=" bg-blue-300 border rounded-xl p-[1vh] shadow-xl">Item 3</div>
+          <div class=" bg-blue-100 example-child">Item 1</div>
+          <div class="bg-blue-200 example-child">Item 2</div>
+          <div class=" bg-blue-300 border example-child">Item 3</div>
         </div>
       </div>
-    </app-titled-vstack>
+    </div>
     <app-titled-vstack title="CenterHorizontal: chorizontal">
       <app-chorizontal customClass="bg-slate-500 rounded-xl border p-[1vh] text-white">This is
         centered</app-chorizontal>
@@ -52,16 +43,6 @@
 
   <!-- </app-ffull> -->
 </main>
-
-
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
 <router-outlet />

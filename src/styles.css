@@ -2,3 +2,129 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --one: #fce3c9;
+  --two: #d9799c;
+  --three: #04adbf;
+  --four: #5e4eb3;
+  --five: #a10034;
+  --six: #59023b;
+  --seven: #2a1673;
+  --eight: #023059;
+  --nine: #2a2f56;
+}
+
+* {
+  margin: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--nine);
+  font-size: 1.8vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100svh;
+  width: 100vw;
+  background-color: var(--eight);
+}
+
+/* TYPOGRAPHY  */
+
+h1 {
+  font-size: 3.5vh;
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--one);
+  text-shadow: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+  font-size: 3vh;
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--one);
+  text-shadow: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.8);
+}
+
+h3 {
+  font-size: 2.5vh;
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--one);
+  text-shadow: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.8);
+}
+
+h4 {
+  font-size: 2vh;
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--one);
+  text-shadow: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.8);
+}
+
+/* BUILDING BLOCK CLASSES  */
+
+.flexfit {
+  display: flex;
+}
+
+.flexfull {
+  flex: 1;
+  width: 100%;
+}
+
+.centerfull {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.vstackfit {
+  display: flex;
+  flex-direction: column;
+}
+
+.vstackfull {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.wrapfull {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* CUSTOM COMPONENT CLASSES  */
+
+.example-outer-container {
+  background-color: var(--one);
+  border: 0.2vh solid #e0e0e0;
+  border-radius: 1vh;
+  padding: 1.5vh;
+  box-shadow: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.8);
+}
+
+.example-parent-container {
+  background-color: steelblue;
+  border: 0.2vh solid #e0e0e0;
+  border-radius: 1vh;
+  padding: 1.5vh;
+  box-shadow: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.8);
+}
+
+.example-child {
+  border: 0.2vh solid #e0e0e0;
+  border-radius: 1.2vh;
+  padding: 1vh;
+  box-shadow: 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.6);
+}

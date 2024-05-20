@@ -8,7 +8,7 @@ import { TitledVStack } from './building-blocks/examples.component';
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
-    styleUrl: '/global.css',
+    // styleUrl: '/styles.css',
     imports: [RouterOutlet, FFull, CHorizontal, VFit, VFull, FFit, TitledVStack]
 })
 export class AppComponent {
