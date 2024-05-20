@@ -17,6 +17,7 @@
 
   /* BOX SHADOWS  */
   --shadowxxs: 0.1vh 0.1vh 0.1vh rgba(0, 0, 0, 0.8);
+  --shadowxs: 0.1vh 0.1vh 0.2vh rgba(0, 0, 0, 0.8);
   --shadowsm: 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.8);
   --shadowmd: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.8);
   --shadowlg: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.8);
@@ -25,6 +26,7 @@
 
   /* TEXT SHADOWS  */
   --txtshadowxxs: 0.1vh 0.1vh 0.1vh rgba(0, 0, 0, 0.8);
+  --txtshadowxs: 0.1vh 0.1vh 0.2vh rgba(0, 0, 0, 0.8);
   --txtshadowsm: 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.8);
   --txtshadowmd: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.8);
   --txtshadowlg: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.8);
@@ -136,6 +138,34 @@ h4 {
   line-height: 1.1;
 }
 
+.txtshadow-xxs {
+  text-shadow: var(--txtshadowxxs);
+}
+
+.txtshadow-xs {
+  text-shadow: var(--txtshadowxs);
+}
+
+.txtshadow-sm {
+  text-shadow: var(--txtshadowsm);
+}
+
+.txtshadow-md {
+  text-shadow: var(--txtshadowmd);
+}
+
+.txtshadow-lg {
+  text-shadow: var(--txtshadowlg);
+}
+
+.txtshadow-xl {
+  text-shadow: var(--txtshadowxl);
+}
+
+.txtshadow-xxl {
+  text-shadow: var(--txtshadowxxl);
+}
+
 /* SPACING  */
 
 .pxxs {
@@ -168,6 +198,132 @@ h4 {
 
 .pxxxl {
   padding: var(--xxxl);
+}
+
+.gapxxs {
+  gap: var(--xxs);
+}
+
+.gapxs {
+  gap: var(--xs);
+}
+
+.gapsm {
+  gap: var(--sm);
+}
+
+.gapmd {
+  gap: var(--md);
+}
+
+.gaplg {
+  gap: var(--lg);
+}
+
+.gapxl {
+  gap: var(--xl);
+}
+
+.gapxxl {
+  gap: var(--xxl);
+}
+
+.gapxxxl {
+  gap: var(--xxxl);
+}
+
+.gapyxxs {
+  column-gap: var(--xxs);
+}
+
+.gapys {
+  column-gap: var(--xs);
+}
+
+.gapysm {
+  column-gap: var(--sm);
+}
+
+.gapymd {
+  column-gap: var(--md);
+}
+
+.gapylg {
+  column-gap: var(--lg);
+}
+
+.gapyxl {
+  column-gap: var(--xl);
+}
+
+.gapyxxl {
+  column-gap: var(--xxl);
+}
+
+.gapyxxxl {
+  column-gap: var(--xxxl);
+}
+
+.gapxxxs {
+  row-gap: var(--xxs);
+}
+
+.gapxxs {
+  row-gap: var(--xs);
+}
+
+.gapxsm {
+  row-gap: var(--sm);
+}
+
+.gapxmd {
+  row-gap: var(--md);
+}
+
+.gapxlg {
+  row-gap: var(--lg);
+}
+
+.gapxxl {
+  row-gap: var(--xl);
+}
+
+.gapxxxl {
+  row-gap: var(--xxl);
+}
+
+.gapxxxxl {
+  row-gap: var(--xxxl);
+}
+
+/* BOX SHADOWS  */
+
+.shadow-xxs {
+  box-shadow: var(--shadowxxs);
+}
+
+.shadow-xs {
+  box-shadow: var(--shadowxs);
+}
+
+.shadow-sm {
+  box-shadow: var(--shadowsm);
+}
+
+.shadow-md {
+  box-shadow: var(--shadowmd);
+}
+
+.shadow-lg {
+  box-shadow: var(--shadowlg);
+}
+
+.shadow-xl {
+  box-shadow: var(--shadowxl);
+}
+
+.shadow-xxl {
+  box-shadow: var(--shadowxxl);
 }
 
 /* BUILDING BLOCK CLASSES  */
