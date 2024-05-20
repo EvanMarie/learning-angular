@@ -682,6 +682,7 @@ h5 {
   padding: var(--md);
   background-color: var(--three);
   width: fit-content;
+  box-shadow: var(--shadowlg);
 }
 
 .container-one {
@@ -704,6 +705,7 @@ h5 {
 
 .container-three {
   border: var(--xxxs) solid var(--three);
+  background-color: var(--eight);
   border-radius: var(--md);
   color: var(--one);
   padding: var(--md);
