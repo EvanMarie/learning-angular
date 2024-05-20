@@ -230,7 +230,7 @@ main {
 /* TYPOGRAPHY  */
 
 h1 {
-  font-size: 3.5vh;
+  font-size: 5.5vh;
   line-height: 1.1;
   font-weight: 600;
   color: var(--one);
@@ -238,7 +238,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3vh;
+  font-size: 4.5vh;
   line-height: 1.1;
   font-weight: 600;
   color: var(--one);
@@ -246,7 +246,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.5vh;
+  font-size: 3.5vh;
   line-height: 1.1;
   font-weight: 600;
   color: var(--one);
@@ -254,6 +254,14 @@ h3 {
 }
 
 h4 {
+  font-size: 2.5vh;
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--one);
+  text-shadow: var(--txtshadowmd);
+}
+
+h5 {
   font-size: 2vh;
   line-height: 1.1;
   font-weight: 600;
@@ -277,27 +285,42 @@ h4 {
 }
 
 .txt-md {
-  font-size: 1.9vh;
+  font-size: 2vh;
   line-height: 1.1;
 }
 
 .txt-lg {
-  font-size: 2.2vh;
-  line-height: 1.1;
-}
-
-.txt-xl {
   font-size: 2.4vh;
   line-height: 1.1;
 }
 
-.txt-xxl {
-  font-size: 2.6vh;
+.txt-xl {
+  font-size: 2.8vh;
   line-height: 1.1;
 }
 
-.txt-xxxl {
-  font-size: 2.8vh;
+.txt-2xl {
+  font-size: 3vh;
+  line-height: 1.1;
+}
+
+.txt-3xl {
+  font-size: 3.3vh;
+  line-height: 1.1;
+}
+
+.txt-4xl {
+  font-size: 3.6vh;
+  line-height: 1.1;
+}
+
+.txt-5xl {
+  font-size: 4vh;
+  line-height: 1.1;
+}
+
+.txt-6xl {
+  font-size: 4.5vh;
   line-height: 1.1;
 }
 
