@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// FlexFit
+// ffit
 @Component({
-  selector: 'app-flex-fit',
+  selector: 'app-ffit',
   template: `
     <div class="flex w-fit" [ngClass]="customClass">
       <ng-content></ng-content>
@@ -12,28 +12,28 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule]
 })
-export class FlexFit {
+export class FFit {
   @Input() customClass: string = '';
 }
 
-// FlexFull
+// ffull
 @Component({
-  selector: 'app-flex-full',
+  selector: 'app-ffull',
   template: `
-    <div class="flex w-full" [ngClass]="customClass">
+    <div class="flex w-full flex-1" [ngClass]="customClass">
       <ng-content></ng-content>
     </div>
   `,
   standalone: true,
   imports: [CommonModule]
 })
-export class FlexFull {
+export class FFull {
   @Input() customClass: string = '';
 }
 
-// CenterHorizontal
+// chorizontal
 @Component({
-  selector: 'app-center-horizontal',
+  selector: 'app-chorizontal',
   template: `
     <div class="flex w-full justify-center items-center" [ngClass]="customClass">
       <ng-content></ng-content>
@@ -42,13 +42,13 @@ export class FlexFull {
   standalone: true,
   imports: [CommonModule]
 })
-export class CenterHorizontal {
+export class CHorizontal {
   @Input() customClass: string = '';
 }
 
-// VStackFit
+// vfit
 @Component({
-  selector: 'app-vstack-fit',
+  selector: 'app-vfit',
   template: `
     <div class="flex flex-col w-fit" [ngClass]="customClass">
       <ng-content></ng-content>
@@ -57,13 +57,13 @@ export class CenterHorizontal {
   standalone: true,
   imports: [CommonModule]
 })
-export class VStackFit {
+export class VFit {
   @Input() customClass: string = '';
 }
 
-// VStackFull
+// vfull
 @Component({
-  selector: 'app-vstack-full',
+  selector: 'app-vfull',
   template: `
     <div class="w-full flex flex-col" [ngClass]="customClass">
       <ng-content></ng-content>
@@ -72,7 +72,8 @@ export class VStackFit {
   standalone: true,
   imports: [CommonModule]
 })
-export class VStackFull {
+export class VFull {
   @Input() customClass: string = '';
 }
+
 

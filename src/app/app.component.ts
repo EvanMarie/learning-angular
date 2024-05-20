@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CenterHorizontal, FlexFull, VStackFit, VStackFull, FlexFit } from './building-blocks/flexboxes.component';
+import { CHorizontal, FFull, VFit, VFull, FFit } from './building-blocks/flexboxes.component';
+import { TitledVStack } from './building-blocks/examples.component';
 
 
 @Component({
@@ -8,7 +9,7 @@ import { CenterHorizontal, FlexFull, VStackFit, VStackFull, FlexFit } from './bu
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: '/global.css',
-    imports: [RouterOutlet, FlexFull, CenterHorizontal, VStackFit, VStackFull, FlexFit]
+    imports: [RouterOutlet, FFull, CHorizontal, VFit, VFull, FFit, TitledVStack]
 })
 export class AppComponent {
   title = 'learning-angular';

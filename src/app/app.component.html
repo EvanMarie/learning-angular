@@ -9,34 +9,48 @@
 
 
 <main class="w-full h-[100svh] bg-red-200">
-  <app-flex-full>
-    <app-vstack-full customClass="w-full gap-[2vh]">
-      <h1 class="text-4xl font-bold text-slate-700">Custom Components In Angular</h1>
-      <app-flex-full customClass="bg-gray-300 p-[1vh] w-full">
-        <div class="p-4 bg-blue-200">Item 1</div>
-        <div class="p-4 bg-blue-400">Item 2</div>
-        <div class="p-4 bg-blue-600">Item 3</div>
-      </app-flex-full>
-      <app-center-horizontal customClass="bg-blue-300 w-full">This is centered</app-center-horizontal>
-      <app-vstack-fit customClass="">
+
+  <div class="vstackfull gap-[2vh] p-[1vh]">
+    <!-- <app-chorizontal> -->
+    <div class="centerfull">
+      <h1 class="text-slate-700">Custom Components In Angular</h1>
+    </div>
+    <!-- </app-chorizontal> -->
+    <app-titled-vstack title="FlexFull: ffull (with three child elements)">
+      <div class="flexfull example-parent-container">
+        <div class="vstackfit gap-[2vh]">
+          <div class=" bg-blue-100 border rounded-xl p-[1vh] shadow-xl">Item 1</div>
+          <div class="bg-blue-200 border rounded-xl p-[1vh] shadow-xl">Item 2</div>
+          <div class=" bg-blue-300 border rounded-xl p-[1vh] shadow-xl">Item 3</div>
+        </div>
+      </div>
+    </app-titled-vstack>
+    <app-titled-vstack title="CenterHorizontal: chorizontal">
+      <app-chorizontal customClass="bg-slate-500 rounded-xl border p-[1vh] text-white">This is
+        centered</app-chorizontal>
+    </app-titled-vstack>
+    <app-titled-vstack title="VStackFit: vfit">
+      <app-vfit customClass="">
         <div>This</div>
         <div>That</div>
         <div>Something else</div>
-        <div class="bg-blue-400 w-[5vh] h-[5vh]"></div>
-      </app-vstack-fit>
-      <app-vstack-full customClass="bg-white w-full">
-        <app-flex-fit>
-          <p class="bg-blue-500">This</p>
-        </app-flex-fit>
-        <app-flex-fit>
-          <p class="bg-blue-500">That</p>
-        </app-flex-fit>
-        <app-flex-fit>
-          <p class="bg-blue-500">Something else</p>
-        </app-flex-fit>
-      </app-vstack-full>
-    </app-vstack-full>
-  </app-flex-full>
+        <div class="bg-blue-400 w-[5vh] h-[5vh] example-parent-container"></div>
+      </app-vfit>
+    </app-titled-vstack>
+    <app-vfull customClass="bg-white">
+      <app-ffit>
+        <p class="bg-blue-500">This</p>
+      </app-ffit>
+      <app-ffit>
+        <p class="bg-blue-500">That</p>
+      </app-ffit>
+      <app-ffit>
+        <p class="bg-blue-500">Something else</p>
+      </app-ffit>
+    </app-vfull>
+  </div>
+
+  <!-- </app-ffull> -->
 </main>
 
 
