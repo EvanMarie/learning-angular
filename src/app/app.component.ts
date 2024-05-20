@@ -7,7 +7,7 @@ import { CenterHorizontal, FlexFull, VStackFit, VStackFull, FlexFit } from './bu
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
-    styleUrl: './app.component.css',
+    styleUrl: '/global.css',
     imports: [RouterOutlet, FlexFull, CenterHorizontal, VStackFit, VStackFull, FlexFit]
 })
 export class AppComponent {

@@ -20,7 +20,7 @@ export class FlexFit {
 @Component({
   selector: 'app-flex-full',
   template: `
-    <div class="flex" [ngClass]="customClass">
+    <div class="flex w-full" [ngClass]="customClass">
       <ng-content></ng-content>
     </div>
   `,
@@ -65,7 +65,7 @@ export class VStackFit {
 @Component({
   selector: 'app-vstack-full',
   template: `
-    <div class="w-full flex flex-col min-w-full" [ngClass]="customClass">
+    <div class="w-full flex flex-col" [ngClass]="customClass">
       <ng-content></ng-content>
     </div>
   `,
@@ -75,3 +75,4 @@ export class VStackFit {
 export class VStackFull {
   @Input() customClass: string = '';
 }
+
