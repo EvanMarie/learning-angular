@@ -107,7 +107,7 @@ h4 {
 /* CUSTOM COMPONENT CLASSES  */
 
 .example-outer-container {
-  background-color: var(--one);
+  background-color: var(--six);
   border: 0.2vh solid #e0e0e0;
   border-radius: 1vh;
   padding: 1.5vh;
