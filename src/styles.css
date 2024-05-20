@@ -4,7 +4,8 @@
 @tailwind utilities;
 
 :root {
-  --one: #fce3c9;
+  /* COLORS  */
+  --one: #fcf1e6;
   --two: #d9799c;
   --three: #04adbf;
   --four: #5e4eb3;
@@ -13,6 +14,32 @@
   --seven: #2a1673;
   --eight: #023059;
   --nine: #2a2f56;
+
+  /* BOX SHADOWS  */
+  --shadowxxs: 0.1vh 0.1vh 0.1vh rgba(0, 0, 0, 0.8);
+  --shadowsm: 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.8);
+  --shadowmd: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.8);
+  --shadowlg: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.8);
+  --shadowxl: 1vh 1vh 2vh rgba(0, 0, 0, 0.8);
+  --shadowxxl: 2vh 2vh 4vh rgba(0, 0, 0, 0.8);
+
+  /* TEXT SHADOWS  */
+  --txtshadowxxs: 0.1vh 0.1vh 0.1vh rgba(0, 0, 0, 0.8);
+  --txtshadowsm: 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.8);
+  --txtshadowmd: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.8);
+  --txtshadowlg: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.8);
+  --txtshadowxl: 1vh 1vh 2vh rgba(0, 0, 0, 0.8);
+  --txtshadowxxl: 2vh 2vh 4vh rgba(0, 0, 0, 0.8);
+
+  /* SPACING  */
+  --xxs: 0.2vh;
+  --xs: 0.4vh;
+  --sm: 0.6vh;
+  --md: 1.2vh;
+  --lg: 1.8vh;
+  --xl: 2.4vh;
+  --xxl: 3.6vh;
+  --xxxl: 4.8vh;
 }
 
 * {
@@ -69,6 +96,80 @@ h4 {
   text-shadow: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.8);
 }
 
+.txt-xxs {
+  font-size: 1.2vh;
+  line-height: 1.1;
+}
+
+.txt-xs {
+  font-size: 1.4vh;
+  line-height: 1.1;
+}
+
+.txt-sm {
+  font-size: 1.6vh;
+  line-height: 1.1;
+}
+
+.txt-md {
+  font-size: 1.8vh;
+  line-height: 1.1;
+}
+
+.txt-lg {
+  font-size: 2vh;
+  line-height: 1.1;
+}
+
+.txt-xl {
+  font-size: 2.2vh;
+  line-height: 1.1;
+}
+
+.txt-xxl {
+  font-size: 2.4vh;
+  line-height: 1.1;
+}
+
+.txt-xxxl {
+  font-size: 2.6vh;
+  line-height: 1.1;
+}
+
+/* SPACING  */
+
+.pxxs {
+  padding: var(--xxs);
+}
+
+.pxs {
+  padding: var(--xs);
+}
+
+.psm {
+  padding: var(--sm);
+}
+
+.pmd {
+  padding: var(--md);
+}
+
+.plg {
+  padding: var(--lg);
+}
+
+.pxl {
+  padding: var(--xl);
+}
+
+.pxxl {
+  padding: var(--xxl);
+}
+
+.pxxxl {
+  padding: var(--xxxl);
+}
+
 /* BUILDING BLOCK CLASSES  */
 
 .flexfit {
@@ -106,25 +207,28 @@ h4 {
 
 /* CUSTOM COMPONENT CLASSES  */
 
-.example-outer-container {
+.container-one {
   background-color: var(--six);
-  border: 0.2vh solid #e0e0e0;
-  border-radius: 1vh;
-  padding: 1.5vh;
-  box-shadow: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.8);
+  border: var(--xxs) solid var(--two);
+  color: var(--one);
+  border-radius: var(--md);
+  padding: var(--md);
+  box-shadow: var(--shadowmd);
 }
 
-.example-parent-container {
-  background-color: steelblue;
-  border: 0.2vh solid #e0e0e0;
-  border-radius: 1vh;
-  padding: 1.5vh;
-  box-shadow: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.8);
+.container-two {
+  background-color: var(--seven);
+  border: var(--xxs) solid var(--four);
+  color: var(--one);
+  border-radius: var(--md);
+  padding: var(--md);
+  box-shadow: var(--shadowmd);
 }
 
-.example-child {
-  border: 0.2vh solid #e0e0e0;
-  border-radius: 1.2vh;
-  padding: 1vh;
-  box-shadow: 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.6);
+.container-three {
+  border: var(--xxs) solid var(--three);
+  border-radius: var(--md);
+  color: var(--one);
+  padding: var(--md);
+  box-shadow: var(--shadowmd);
 }
