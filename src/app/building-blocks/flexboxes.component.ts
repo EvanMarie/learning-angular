@@ -65,7 +65,7 @@ export class VStackFit {
 @Component({
   selector: 'app-vstack-full',
   template: `
-    <div class="flex flex-col w-full" [ngClass]="customClass">
+    <div class="w-full flex flex-col min-w-full" [ngClass]="customClass">
       <ng-content></ng-content>
     </div>
   `,
