@@ -102,7 +102,45 @@ module.exports = {
           [`${(i + 1) / 10}%`]: `${(i + 1) / 10}%`,
         }))
       ),
+      minHeight: Object.assign(
+        {},
+        ...Array.from({ length: 1000 }, (_, i) => ({
+          [`${(i + 1) / 10}vh`]: `${(i + 1) / 10}vh`,
+          [`${(i + 1) / 10}%`]: `${(i + 1) / 10}%`,
+        }))
+      ),
+      maxHeight: Object.assign(
+        {},
+        ...Array.from({ length: 1000 }, (_, i) => ({
+          [`${(i + 1) / 10}vh`]: `${(i + 1) / 10}vh`,
+          [`${(i + 1) / 10}%`]: `${(i + 1) / 10}%`,
+        }))
+      ),
       width: Object.assign(
+        {},
+        ...Array.from({ length: 1000 }, (_, i) => ({
+          [`${(i + 1) / 10}vh`]: `${(i + 1) / 10}vh`,
+          [`${(i + 1) / 10}vw`]: `${(i + 1) / 10}vw`,
+          [`${(i + 1) / 10}%`]: `${(i + 1) / 10}%`,
+        }))
+      ),
+      maxWidth: Object.assign(
+        {},
+        ...Array.from({ length: 1000 }, (_, i) => ({
+          [`${(i + 1) / 10}vh`]: `${(i + 1) / 10}vh`,
+          [`${(i + 1) / 10}vw`]: `${(i + 1) / 10}vw`,
+          [`${(i + 1) / 10}%`]: `${(i + 1) / 10}%`,
+        }))
+      ),
+      minWidth: Object.assign(
+        {},
+        ...Array.from({ length: 1000 }, (_, i) => ({
+          [`${(i + 1) / 10}vh`]: `${(i + 1) / 10}vh`,
+          [`${(i + 1) / 10}vw`]: `${(i + 1) / 10}vw`,
+          [`${(i + 1) / 10}%`]: `${(i + 1) / 10}%`,
+        }))
+      ),
+      maxWidth: Object.assign(
         {},
         ...Array.from({ length: 1000 }, (_, i) => ({
           [`${(i + 1) / 10}vh`]: `${(i + 1) / 10}vh`,
