@@ -3,7 +3,7 @@ import { AppComponent } from './app.component';
 import { DesignComponent } from './design/design.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
+//   { path: '', component: AppComponent },
   { path: 'design', component: DesignComponent },
 ];
 

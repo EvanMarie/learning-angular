@@ -1,9 +1,15 @@
-<main>
-  <button type="button" routerLink="/design" class="text-100">Design</button>
-
-
-
-</main>
+<div class="flex w-screen items-center justify-evenly bg-black">
+  <div class="flex w-fit flex-shrink-0 text-nowrap">
+    <p class="text-100">Learning Angular</p>
+  </div>
+  <div class="flex items-center w-full">
+    <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page" class="p-1vh text-100 ">
+      <div class="button">Main</div>
+    </a>
+    <div class="button"><a routerLink="/design" routerLinkActive="active" ariaCurrentWhenActive="page"
+        class="p-1vh text-100 w-fit">Design</a></div>
+  </div>
+</div>
 
 
 <router-outlet></router-outlet>
