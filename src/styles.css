@@ -227,7 +227,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--nine);
   font-size: var(--txt-md);
-  background-color: var(--eight);
+  background-color: var(--nine);
 }
 
 /* TYPOGRAPHY  */
@@ -633,7 +633,7 @@ h5 {
   box-shadow: var(--shadowxl);
 }
 
-.shadow-xxl {
+.shadow-2xl {
   box-shadow: var(--shadowxxl);
 }
 
