@@ -232,11 +232,25 @@ body {
 
 .button {
   text-decoration: none;
-  background-color: var(--two);
-  color: var(--seven);
-  border-radius: var(--md);
+  background-color: var(--one);
+  background: linear-gradient(
+    145deg,
+    var(--two-eighty) 0%,
+    var(--four-eighty) 100%
+  );
+  color: var(--one);
+  text-shadow: var(--txtshadowmd);
+  border-radius: var(--lg);
   padding: var(--xxs) var(--md);
   box-shadow: var(--shadowmd);
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--five);
+  color: var(--one);
+  box-shadow: var(--shadowlg);
 }
 
 /* TYPOGRAPHY  */
@@ -648,12 +662,22 @@ h5 {
 
 /* BUILDING BLOCK CLASSES  */
 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100svh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .flex {
   display: flex;
 }
 
 .flexfull {
-  flex: 1;
+  display: flex;
   width: 100%;
 }
 
@@ -681,16 +705,14 @@ h5 {
   flex-wrap: wrap;
 }
 
-/* CUSTOM COMPONENT CLASSES  */
+/* PROJECT SPECIFIC CUSTOM COMPONENT CLASSES  */
 
-.page-container {
+.colortheme {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100svh;
-  overflow-y: auto;
-  overflow-x: hidden;
+  padding: 1vh 2vh;
+  border-radius: var(--md);
+  text-wrap: nowrap;
+  box-shadow: var(--shadowmd);
 }
 
 .simple-container {
