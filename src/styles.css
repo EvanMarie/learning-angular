@@ -49,16 +49,16 @@
   --four-eighty: rgba(94, 78, 179, 0.8);
   --four-ninety: rgba(94, 78, 179, 0.9);
 
-  --five: rgba(161, 0, 52, 1);
+  --five: rgb(211, 23, 145);
   --five-ten: rgba(4, 4, 4, 0.1);
-  --five-twenty: rgba(161, 0, 52, 0.2);
-  --five-thirty: rgba(161, 0, 52, 0.3);
-  --five-forty: rgba(161, 0, 52, 0.4);
-  --five-fifty: rgba(161, 0, 52, 0.5);
-  --five-sixty: rgba(161, 0, 52, 0.6);
-  --five-seventy: rgba(161, 0, 52, 0.7);
-  --five-eighty: rgba(161, 0, 52, 0.8);
-  --five-ninety: rgba(161, 0, 52, 0.9);
+  --five-twenty: rgba(209, 0, 136, 0.2);
+  --five-thirty: rgba(44, 34, 37, 0.3);
+  --five-forty: rgba(209, 0, 136, 0.4);
+  --five-fifty: rgba(209, 0, 136, 0.5);
+  --five-sixty: rgba(209, 0, 136, 0.6);
+  --five-seventy: rgba(209, 0, 136, 0.7);
+  --five-eighty: rgba(209, 0, 136, 0.8);
+  --five-ninety: rgba(209, 0, 136, 0.9);
 
   --six: rgba(89, 2, 59, 1);
   --six-ten: rgba(89, 2, 59, 0.1);
@@ -232,16 +232,16 @@ body {
 
 .button {
   text-decoration: none;
-  background-color: var(--one);
+  background-color: var(--one-forty);
   background: linear-gradient(
     145deg,
-    var(--two-eighty) 0%,
-    var(--four-eighty) 100%
+    var(--five-fifty) 0%,
+    var(--six-fifty) 100%
   );
   color: var(--one);
   text-shadow: var(--txtshadowmd);
   border-radius: var(--lg);
-  padding: var(--xxs) var(--md);
+  padding: var(--xxs) var(--lg);
   box-shadow: var(--shadowmd);
   font-weight: 500;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;

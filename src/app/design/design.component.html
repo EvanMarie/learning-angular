@@ -1,14 +1,8 @@
 <div class="page-container pt-5vh">
     <div class="wrapfull p-1.5vh justify-evenly gap-lg">
-        <div class="colortheme bg-100">theme: 100</div>
-        <div class="colortheme bg-200">theme: 200</div>
-        <div class="colortheme bg-300">theme: 300</div>
-        <div class="colortheme bg-400 text-100">theme: 400</div>
-        <div class="colortheme bg-500 text-100">theme: 500</div>
-        <div class="colortheme bg-600 text-100">theme: 600</div>
-        <div class="colortheme bg-700 text-100">theme: 700</div>
-        <div class="colortheme bg-800 text-100">theme: 800</div>
-        <div class="colortheme bg-900 text-100">theme: 900</div>
+        <div *ngFor="let theme of themes" class="colortheme" [class]="'bg-' + theme" [class.text-100]="theme >= 400">
+            theme: {{ theme }}
+        </div>
     </div>
     <div class="wrapfull gap-lg justify-evenly p-1.5vh ">
         <div class="simple-container rounded-3xs">rounded-3xs</div>
