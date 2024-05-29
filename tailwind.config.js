@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
@@ -209,5 +211,23 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities, theme, e }) {
+      const newUtilities = {};
+
+      Object.keys(theme.colors).forEach((colorKey) => {
+        const baseColor = theme.colors[colorKey];
+        for (let i = 0; i <= 90; i += 10) {
+          const opacityClass = colorKey + i;
+          const opacityValue = i / 100;
+          newUtilities[`.bg-${opacityClass}`] = {
+            backgroundColor: `${baseColor}`,
+            opacity: `${opacityValue}`,
+          };
+        }
+      });
+
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    }),
+  ],
 };

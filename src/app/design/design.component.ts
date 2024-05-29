@@ -12,5 +12,4 @@ import { CommonModule } from '@angular/common';
 export class DesignComponent {
     themes = [100, 200, 300, 400, 500, 600, 700, 800, 900];
 
-
 }
